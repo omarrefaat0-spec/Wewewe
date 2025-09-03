@@ -1,0 +1,11 @@
+app = "telegram-facebook-bot"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  TELEGRAM_TOKEN = "changeme"
+  CHAT_ID = "changeme"
+
+[experimental]
+  cmd = ["python", "bot.py"]
